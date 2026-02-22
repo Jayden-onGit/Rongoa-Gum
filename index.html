@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kati & Kells</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* --- General --- */
+body{
+  margin:0;
+  font-family:'Montserrat', sans-serif;
+  background:#f4f4f4;
+  font-size:15px;
+  scroll-behavior: smooth;
+}
+
+/* --- Navbar --- */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 5%;
+  position:fixed;
+  width:100%;
+  box-sizing:border-box;
+  background:rgba(0,33,71,0.95);
+  color:white;
+  z-index:10;
+}
+
+.navbar strong{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:28px;
+  letter-spacing:1px;
+}
+
+.nav-links a{
+  margin-left:30px;
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s ease;
+}
+
+.nav-links a:hover{
+  opacity:0.7;
+  transform:translateY(-2px);
+}
+
+/* --- Hero --- */
+.hero{
+  min-height:80vh;
+  background:#002147 url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+.hero h1{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:65px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:600px;
+  line-height:1.6;
+  font-size:16px;
+}
+
+.btn{
+  margin-top:25px;
+  padding:14px 30px;
+  background:#FFC947; /* secondary accent */
+  color:#002147;
+  border:none;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s ease, box-shadow 0.3s ease;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* --- Sections --- */
+.section{
+  padding:100px 10%;
+}
+
+.featured, .about{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+.product-image img,
+.about img{
+  width:420px;
+  max-width:100%;
+  transition:0.4s ease;
+  border-radius:10px;
+}
+
+.product-image img:hover,
+.about img:hover{
+  transform:scale(1.05);
+}
+
+.product-info, .about-text{
+  max-width:520px;
+}
+
+.product-info h2,
+.about-text h2{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.product-info p,
+.about-text p{
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* --- Footer --- */
+.footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.footer h3{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:24px;
+  margin-bottom:15px;
+}
+
+.footer a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  transition:0.3s ease;
+}
+
+.footer a:hover{
+  opacity:0.7;
+}
+
+.footer .legal{
+  margin-top:15px;
+  font-size:13px;
+}
+
+/* --- Responsive --- */
+@media(max-width:900px){
+  .featured, .about{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .product-info, .about-text{
+    margin-top:30px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <strong>Kati & Kells</strong>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#featured">Shop</a>
+    <a href="#about">About</a>
+    <a href="#footer">Contact</a>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <h1>Your Sweet Relief Starts Here</h1>
+  <p>
+    Our drug-free nicotine replacement gum helps teenagers in New Zealand step away from smoking or vaping. Practical support for cravings, designed for long-term habits.
+  </p>
+  <a href="#featured" class="btn">Shop Now</a>
+</section>
+
+<!-- Featured Product Section -->
+<section class="section featured" id="featured">
+  <div class="product-image">
+    <img src="https://via.placeholder.com/420x500" alt="Nicotine Replacement Gum">
+  </div>
+  <div class="product-info">
+    <h2>Our Product</h2>
+    <p>
+      Convenient, discreet, and easy to use. Our gum fits naturally into everyday life, helping you manage cravings while keeping your routine uninterrupted.
+    </p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section about" id="about">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+      Kati & Kells was founded to provide meaningful support for teenagers wanting to reduce nicotine use. We focus on accessibility, responsibility, and long-term wellbeing.
+    </p>
+  </div>
+  <img src="https://via.placeholder.com/350x450" alt="About Image">
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="footer">
+  <h3>Socials</h3>
+  <a href="#">Instagram</a>
+  <a href="#">TikTok</a>
+  <a href="#">Facebook</a>
+  <a href="https://x.com/KatiandKells" target="_blank" rel="noopener noreferrer">Twitter</a>
+  <div class="legal">
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | © 2026 Kati & Kells
+  </div>
+</footer>
+
+</body>
+</html>
