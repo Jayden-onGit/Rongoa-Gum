@@ -52,7 +52,7 @@ body{
 
 /* --- Hero --- */
 .hero{
-  min-height:100vh; /* made bigger */
+  min-height:100vh; /* slightly taller */
   background:#002147 url('https://via.placeholder.com/1200x600') center/cover no-repeat;
   color:white;
   display:flex;
@@ -79,7 +79,7 @@ body{
 .btn{
   margin-top:25px;
   padding:14px 30px;
-  background:white; /* changed from yellow to white */
+  background:white; /* Shop Now button white */
   color:#002147;
   border:none;
   font-weight:600;
@@ -99,21 +99,12 @@ body{
   padding:100px 10%;
 }
 
-.section.wide{
-  max-width:95%; /* a bit wider */
-  margin:0 auto;
-}
-
 .featured, .about{
   display:flex;
   justify-content:space-between;
   align-items:center;
   gap:60px;
   flex-wrap:wrap;
-}
-
-.about{
-  background:#e0e0e0; /* slightly darker than product section */
 }
 
 .product-image img,
@@ -130,13 +121,13 @@ body{
 }
 
 .product-info, .about-text{
-  max-width:600px;
+  max-width:520px; /* restored original width */
 }
 
 .product-info h2,
 .about-text h2{
   font-family:'Bebas Neue', sans-serif;
-  font-size:48px;
+  font-size:52px; /* original size */
   margin-bottom:20px;
 }
 
@@ -156,7 +147,7 @@ body{
 
 .footer h3{
   font-family:'Bebas Neue', sans-serif;
-  font-size:24px;
+  font-size:26px;
   margin-bottom:15px;
 }
 
@@ -171,8 +162,9 @@ body{
   opacity:0.7;
 }
 
+/* Only move legal text down */
 .footer .legal{
-  margin-top:8px; /* slightly lower than socials */
+  margin-top:10px; /* slightly lower */
   font-size:13px;
   display:block;
 }
@@ -185,10 +177,9 @@ body{
   }
 
   .product-info, .about-text{
-    margin-top:30px;
+    margin-top:40px;
   }
 }
-
 </style>
 </head>
 
@@ -215,7 +206,7 @@ body{
 </section>
 
 <!-- Featured Product Section -->
-<section class="section featured wide" id="featured">
+<section class="section featured" id="featured">
   <div class="product-image">
     <img src="https://via.placeholder.com/420x500" alt="Nicotine Replacement Gum">
   </div>
@@ -228,7 +219,7 @@ body{
 </section>
 
 <!-- About Section -->
-<section class="section about wide" id="about">
+<section class="section about" id="about">
   <div class="about-text">
     <h2>About Us</h2>
     <p>
@@ -245,9 +236,9 @@ body{
   <a href="#">TikTok</a>
   <a href="#">Facebook</a>
   <a href="https://x.com/KatiandKells" target="_blank" rel="noopener noreferrer">Twitter</a>
-  <span class="legal">
+  <div class="legal">
     <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | © 2026 Kati & Kells
-  </span>
+  </div>
 </footer>
 
 </body>
